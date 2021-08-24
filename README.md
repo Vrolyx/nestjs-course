@@ -56,6 +56,89 @@ $ npm run test:cov
 ```
 
 ## REST API Documentatie
+
 Zie http://localhost:3000/api voor de swagger documentatie (alleen beschikbaar in iluvcoffee).
 
 Gebruik de API_KEY in de .env als authenticatie header in de API requests. (alleen nodig voor iluvcoffee)
+
+## GraphQL API documentatie
+
+Open de GraphQL playground op http://localhost:3000/graphql
+
+Documentatie/schemas zijn terug te vinden in de tab rechts onder "docs" en "schemas".
+Hierin zijn de beschikbare models terug te vinden.
+
+Hieronder zijn een aantal voorbeel queries terug te vinden. De resolver is terug te vinden in de src/coffees/coffees.resolver.ts
+
+### Voorbeeld queries
+
+#### updateCoffee
+
+```
+mutation {
+  updateCoffee(coffeeId: "1", updateCoffeeInput: {
+    title: "Dark roast"
+    recommendations: "0"
+  }){
+    title
+    brand
+    recommendations
+    flavors {
+      name
+    }
+  }
+}
+```
+
+#### createCoffee
+Query:
+```
+mutation createCoffee($createCoffeeInput: CreateCoffeeInput!){
+  createCoffee(createCoffeeInput: $createCoffeeInput) {
+    id
+    brand
+    flavors {
+      name
+    }
+  }
+}
+```
+Variabelen:
+```
+{
+  "createCoffeeInput": {
+    "title": "Donkere koffie",
+    "brand": "Appie huismerk",
+    "flavors": ["Sterk", "Noten"]
+  }
+}
+```
+
+#### recommendCoffee
+```
+mutation {
+  recommendCoffee(coffeeId: "1" ){
+    id
+    recommendations
+    flavors {
+      name
+    }
+  }
+}
+```
+
+#### coffee (query)
+```
+query {
+  coffee(id: "1"){
+    id
+    title
+    description
+    brand
+    recommendations
+    flavors {
+      name
+    }
+  }
+}
+```
