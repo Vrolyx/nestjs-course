@@ -68,7 +68,7 @@ Open de GraphQL playground op http://localhost:3000/graphql
 Documentatie/schemas zijn terug te vinden in de tab rechts onder "docs" en "schemas".
 Hierin zijn de beschikbare models terug te vinden.
 
-Hieronder zijn een aantal voorbeel queries terug te vinden. De resolver is terug te vinden in de src/coffees/coffees.resolver.ts
+Hieronder zijn een aantal voorbeeld queries terug te vinden. De resolver is terug te vinden in de src/coffees/coffees.resolver.ts
 
 ### Voorbeeld queries
 
