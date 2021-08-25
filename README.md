@@ -1,4 +1,24 @@
-# NestJS Course
+# NestJS REST & GraphQL example
+
+Dit project is een uitwerking van de officiele NestJS course die [hier](https://courses.nestjs.com/) is terug te vinden.
+Daarnaast is er ook een GraphQL implementatie uitgewerkt. Het doel van deze course was om een backend 
+te bouwen met de technieken in de onderstaande tabel. Daarnaast laat het project ook het verschil zien tussen een REST en een GraphQL API.
+Een evaluatie over GraphQL, REST en NestJS is [hier](./docs/NestJS_evaluatie.pdf) terug te vinden.
+
+| Technieksoort  | Naam
+| -------------- | ---------
+| Runtime        | [NodeJS](https://nodejs.org/en/)
+| Programmeertaal| [TypeScript](https://www.typescriptlang.org/)
+| Framework      | [NestJS](https://nestjs.com/)    
+| API(s)         | [GraphQL](https://graphql.org/) / [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
+| Databasemethoden | [MongoDB](https://www.mongodb.com/) / [PostgreSQL](https://www.postgresql.org/)
+| Documentatie   | [Swagger](https://swagger.io/)
+| Testtools    | [Jest](https://jestjs.io/)
+
+Om dit project werkend te krijgen is een installatie van [Docker (Compose)](https://docs.docker.com/compose/install/) en
+[NodeJS](https://nodejs.org/en/download/) vereist.
+
+
 
 ## Inhoud
 
@@ -27,7 +47,7 @@
 2. Open de folder van het project dat je wil openen;
 3. Run `npm install` in de root van de folder;
 4. Run `cp .env.dist .env`;
-5. Run `docker-compse up -d`.
+5. Run `docker-compose up -d`.
 
 ## Running the app
 
