@@ -12,7 +12,7 @@ Een evaluatie over GraphQL, REST en NestJS is [hier](./docs/NestJS_evaluatie.pdf
 | Framework      | [NestJS](https://nestjs.com/)    
 | API(s)         | [GraphQL](https://graphql.org/) / [REST](https://en.wikipedia.org/wiki/Representational_state_transfer)
 | Databasemethoden | [MongoDB](https://www.mongodb.com/) / [PostgreSQL](https://www.postgresql.org/)
-| Documentatie   | [Swagger](https://swagger.io/)
+| Documentatie   | [Swagger](https://swagger.io/) (voor de rest API)
 | Testtools    | [Jest](https://jestjs.io/)
 
 Om dit project werkend te krijgen is een installatie van [Docker (Compose)](https://docs.docker.com/compose/install/) en
@@ -162,3 +162,9 @@ query {
   }
 }
 ```
+
+
+Zie de afbeelding hieronder voor een voorbeeld hoe mutaties en queries uitgevoerd worden in GraphQL. Let op: query
+variables zijn alleen nodig voor mutaties, dus niet voor queries!
+
+![example](./img/GraphQL_playground_example.png)
