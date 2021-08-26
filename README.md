@@ -88,6 +88,11 @@ Open de GraphQL playground op http://localhost:3000/graphql
 Documentatie/schemas zijn terug te vinden in de tab rechts onder "docs" en "schemas".
 Hierin zijn de beschikbare models terug te vinden.
 
+Zie de afbeelding hieronder voor een voorbeeld hoe mutaties en queries uitgevoerd worden in GraphQL. Let op: query
+variables zijn alleen nodig voor mutaties, dus niet voor queries!
+
+![example](./img/GraphQL_playground_example.png)
+
 Hieronder zijn een aantal voorbeeld queries terug te vinden. De resolver is terug te vinden in de src/coffees/coffees.resolver.ts
 
 ### Voorbeeld queries
@@ -162,9 +167,3 @@ query {
   }
 }
 ```
-
-
-Zie de afbeelding hieronder voor een voorbeeld hoe mutaties en queries uitgevoerd worden in GraphQL. Let op: query
-variables zijn alleen nodig voor mutaties, dus niet voor queries!
-
-![example](./img/GraphQL_playground_example.png)
